@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	
+	<link href="C:/Users/Andrew/Desktop/MySite/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="C:/Users/Andrew/Desktop/MySite/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+		
+	<script src="C:/Users/Andrew/Desktop/MySite/bootstrap/js/jquery-2.0.0.min.js"></script>
+	<script src="C:/Users/Andrew/Desktop/MySite/bootstrap/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="C:/Users/Andrew/Desktop/MySite/rotate.css">
+	<link rel="stylesheet" type="text/css" href="C:/Users/Andrew/Desktop/MySite/screen.css">
+	
+  </head>
+  <body style="background-color:#cccccc;">
+	 <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+		<font color="#fff0b3">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html" style="color:#e6e6e6;">Andrew Bertonica</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="experience.html" style="color:#e6e6e6;">Experience</a></li>
+            <li><a href="projects.html" style="color:#e6e6e6;">Projects</a></li>
+            <li><a href="references.html" style="color:#e6e6e6;">References</a></li>
+<!--             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charts<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Histogram</a></li>
+                <li><a href="#">Plot Graph</a></li>
+                <li><a href="#">Bar Charts</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Other..</li>
+                <li><a href="#">Standard Deviation</a></li>
+                <li><a href="#">Best Fit</a></li>
+              </ul>
+            </li> -->
+          </ul>
+		</font>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<hr class="featurette-divider">
+	<div style="margin-top:5%; margin-left:15%; font-family:Arial, Verdana;">
+		<button type="button" onmouseover="kionix()" style="float:left; height:10em; width:20em; padding:0; border:none; background:none; "><img src="k.jpg" style="height:10em; width:20em;"></button>
+		<button type="button" onmouseover="rad()" style="clear:left; float:left; height:10em; width:20em; margin-top:5%; padding:0; border:none; background:none; "><img src="rs.jpg" style="height:10em; width:20em;"></button>
+		<button type="button" onmouseover="pnm()" style="clear:left; float:left; height:10em; width:20em; margin-top:5%; padding:0; border:none; background:none; "><img src="pnm.jpg" style="height:10em; width:20em;"></button>
+		<p id="heading" style="hover:left; font-size:3em; width:50%; margin-left:35%">
+		<< Touch a Logo
+		</p>
+		<p id="content1" style="font-size:1em; width:50%; margin-left:35%; font-weight:bold; font-family:Arial, Verdana;">
+		</p>
+		<p id="content2" style="font-size:1em; width:50%; margin-left:35%;">
+		</p>
+		<div id="pics">
+		</div>
+		<p id="reference" style="font-size:1em; width:50%; margin-left:35%; margin-top:5px;">
+		</p>
+	</div>
+	<script type="text/javascript">
+		function kionix(){
+			document.getElementById("heading").innerHTML = "Kionix, Inc. | Summer 2016";
+			document.getElementById("content1").innerHTML = "Web Developer for Micro Sensor Parts Error Interface";
+			document.getElementById("content2").innerHTML = "• Designed and developed web application allowing the company to efficiently find and fix parts production errors<br>"+
+			"• Attended weekly meetings to discuss branch proceedings and parts production strategies<br>"+
+			"• Contributed to micro sensor code for parts production requirements";
+			document.getElementById("pics").innerHTML = "<img src=\"k1.jpg\" style=\"height:15em; width:20em; margin-left:13%;\">"
+			+ "<img src=\"k2.jpg\" style=\"height:15em; width:20em; margin-left:5px\">"
+			+ "<img src=\"k3.jpg\" style=\"height:15em; width:20em; margin-left:5px\">";
+			document.getElementById("reference").innerHTML = "Manager: Jason Hogan | (203)927-8197 | jhogan8@live.com"
+		}
+		function rad(){
+			document.getElementById("heading").innerHTML = "RadioShack | 2013 - 2015";
+			document.getElementById("content1").innerHTML = "Sales Associate";
+			document.getElementById("content2").innerHTML = "• Stock shelves and maintain store organization<br>"+
+			"• Aid customers in finding the perfect fit for a need, and solutions to problems<br>" +
+			"• Keep constant knowledge of inner workings for phone sales programs by Verizon, Sprint, and AT&T";
+			document.getElementById("pics").innerHTML = "<img src=\"r1.jpg\" style=\"height:15em; width:20em; margin-left:13%;\">"
+			+ "<img src=\"r2.jpg\" style=\"height:15em; width:20em; margin-left:5px\">"
+			+ "<img src=\"r3.jpg\" style=\"height:15em; width:20em; margin-left:5px\">";
+			document.getElementById("reference").innerHTML = "Manager: Joshua Blodgett | (607)379-3933 | joshblodgett@gmail.com"
+		}
+		function pnm(){
+			document.getElementById("heading").innerHTML = "Paddle-N-More | 2011 - 2013";
+			document.getElementById("content1").innerHTML = "Paddle Shop Manager";
+			document.getElementById("content2").innerHTML = "• Manage the Myers Park rental shop located on Cayuga Lake<br>"+
+			"• Planned logistics for shop events<br>" +
+			"• Coordinated with the owner to maintain a facility operating to its full capacity";
+			document.getElementById("pics").innerHTML = "<img src=\"p1.jpeg\" style=\"height:15em; width:20em; margin-left:13%;\">"
+			+ "<img src=\"p2.jpeg\" style=\"height:15em; width:20em; margin-left:5px\">"
+			+ "<img src=\"p3.jpg\" style=\"height:15em; width:20em; margin-left:5px\">";
+			document.getElementById("reference").innerHTML = "Manager: Jennifer Miller | (607)342-2397 | jenniferwellsmiller@gmail.com"
+		}
+	</script>
+	
+	
+	
+<!-- 	<div style="margin-top:6%; margin-left:18%;">
+		<div>
+			<div>
+				<p style="float:left; width:40%;font-family:Arial, Verdana;">
+				<font size="6">
+					Kionix, Inc. Ithaca,<br> NY | Summer of 2016
+				</font>
+				</p>
+				<p style="font-size:20px; float:left; width:40%; font-weight:bold;font-family:Arial, Verdana;">
+				Web Developer for Micro Sensor Parts Error Interface<br>			
+				</p>
+				<p style="font-size:15px; float:left; width:40%; font-family:Arial, Verdana;">
+				• Designed and developed web application allowing the company to efficiently find and fix parts production errors<br>
+				• Attended weekly meetings to discuss branch proceedings and parts production strategies<br>
+				• Contributed to micro sensor code for parts production requirements
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style= "margin-left:18%;">
+		<div>
+			<div>
+				<p style="clear:left; float:left; width:40%;font-family:Arial, Verdana; margin-top:2%;">
+				<font size="6">
+					RadioShack Ithaca,<br> NY | 2013 - 2015
+				</font>
+				</p>
+				<p style="font-size:20px; float:left; width:40%; font-weight:bold;font-family:Arial, Verdana; margin-top:2%;">
+				Sales Associate<br>			
+				</p>
+				<p style="font-size:15px; float:left; clear:right width:40%; font-family:Arial, Verdana;">
+				• Aid customers in finding the perfect fit for a need or a solution for a problem<br>
+				• Stock shelves and maintain store organization<br>
+				• Contributed to micro sensor code for parts production requirements
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="margin-left:18%;">
+		<div>
+			<div>
+				<p style="clear:left; float:left; width:40%;font-family:Arial, Verdana; margin-top:2%;">
+				<font size="6">
+					Paddle-N-More Ithaca,<br> NY | 2011 - 2013
+				</font>
+				</p>
+				<p style="font-size:20px; float:left; width:40%; font-weight:bold;font-family:Arial, Verdana; margin-top:2%;">
+				Paddle Shop Manager<br>			
+				</p>
+				<p style="font-size:15px; float:left; width:40%; font-family:Arial, Verdana;">
+				• Managed the Myers Park rental shop located on Cayuga Lake<br>
+				• Planned logistics for shop events<br>
+				• Coordinated with the owner to maintain a facility operating to its full capacity
+				</p>
+			</div>
+		</div>
+	</div> -->
+
+	
+  </body>
+</html>
